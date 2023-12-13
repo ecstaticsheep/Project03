@@ -1240,13 +1240,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd062ee36b3c6b49b0dd70e8586e41a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 0
-  _maxStamina: 0
-  _maxAttack: 0
-  _maxDefense: 0
-  _healthBar: {fileID: 0}
-  _staminaBar: {fileID: 0}
-  _levelNumber: {fileID: 0}
+  _maxHealth: 20
+  _maxStamina: 10
+  _maxAttack: 5
+  _maxDefense: 5
+  _healthBar: {fileID: 1001801629}
+  _staminaBar: {fileID: 273990578}
+  _levelNumber: {fileID: 286638962}
 --- !u!65 &1357674357
 BoxCollider:
   m_ObjectHideFlags: 0
