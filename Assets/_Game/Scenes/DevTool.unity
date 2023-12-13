@@ -344,6 +344,7 @@ GameObject:
   m_Component:
   - component: {fileID: 273990576}
   - component: {fileID: 273990577}
+  - component: {fileID: 273990578}
   m_Layer: 5
   m_Name: StaminaBar_pnl
   m_TagString: Untagged
@@ -424,6 +425,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &273990578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273990575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d14824876825544d9b9e1b16aa304aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _staminaVal: {fileID: 273990577}
 --- !u!1 &286638958
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,8 +448,9 @@ GameObject:
   m_Component:
   - component: {fileID: 286638959}
   - component: {fileID: 286638961}
+  - component: {fileID: 286638962}
   m_Layer: 5
-  m_Name: WorldLevel_pnl
+  m_Name: PlayerLevel_pnl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -471,6 +486,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 286638958}
   m_CullTransparentMesh: 1
+--- !u!114 &286638962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286638958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 152733144df1fa9498b9d77966d01705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentLevelTextView: {fileID: 222929658}
 --- !u!1 &347486012
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,6 +1040,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1001801627}
   - component: {fileID: 1001801628}
+  - component: {fileID: 1001801629}
   m_Layer: 5
   m_Name: HealthBar_pnl
   m_TagString: Untagged
@@ -1092,6 +1121,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1001801629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001801626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb954abbb480eb84aa8ab892de5d701d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _healthVal: {fileID: 1001801628}
 --- !u!1 &1355339478
 GameObject:
   m_ObjectHideFlags: 0
@@ -1198,10 +1240,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd062ee36b3c6b49b0dd70e8586e41a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 0
-  _stamina: 0
-  _attack: 0
-  _defense: 0
+  _maxHealth: 0
+  _maxStamina: 0
+  _maxAttack: 0
+  _maxDefense: 0
+  _healthBar: {fileID: 0}
+  _staminaBar: {fileID: 0}
+  _levelNumber: {fileID: 0}
 --- !u!65 &1357674357
 BoxCollider:
   m_ObjectHideFlags: 0
