@@ -44,7 +44,11 @@ public class PlayerInfo : MonoBehaviour
     public void LevelUp()
     {
         _maxHealth += 10;
+        _currentHealth = _maxHealth;
+
         _maxStamina += 5;
+        _currentStamina = _maxStamina;
+
         _maxAttack += 5;
         _maxDefense += 2;
 
